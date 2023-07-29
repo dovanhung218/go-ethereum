@@ -20,7 +20,7 @@ test: all
 	$(GORUN) build/ci.go test
 
 lint: ## Run linters.
-	$(GORUN) build/ci.go lint
+	$(GORUN) build/ci.go lintf 
 
 clean:
 	env GO111MODULE=on go clean -cache
